@@ -289,7 +289,8 @@ fieldset{
     align-items: center;
 }
 
-@media (max-width: 1024px) {
+
+@media only screen and (max-width: 688px){
     .recipe-area{
         margin-left: 0;
     }
@@ -396,4 +397,22 @@ fieldset{
         width: auto;
     }
    
+}
+
+@media (min-width: 689px) and (max-width: 1024px){
+    .recipe-contents{
+        flex-direction: column
+    }
+    .recipe-item{
+        width: 70%;
+        height: 40%;
+        margin-bottom: 60px;
+    }
+    .download-links{
+        flex-direction: column;
+    }
+    .download-links a{
+        text-align: center;
+    }
+    
 }
